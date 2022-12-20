@@ -27,6 +27,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm install -g npm@latest
-    - run: npm i next
+    - run: npm i next --location=global
     - run: npm run dev
 
