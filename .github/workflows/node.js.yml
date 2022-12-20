@@ -26,6 +26,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - run: yarn add --dev typescript @types/react @types/node
     - run: npm install -g npm@latest
     - run: npm i next --location=global
     - run: npm run dev
